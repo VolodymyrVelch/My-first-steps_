@@ -1,0 +1,147 @@
+/* основний колір #000000*/
+/* дргр колір rgba(0, 0, 0, 0.8); */
+/* білий колір #FFFFFF */
+/* акцент #18A0FB; */
+/* другорядний колір фону #F5F5F5; */
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #000000;
+  --primary-white-color: hsl(0, 0%, 100%);
+  --accent-color: #18a0fb;
+  --seconady-bg-color: #f5f5f5;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+
+  outline: 2px solid tomato;
+}
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-family: Montserrat, sans-serif;
+  letter-spacing: -0.015em;
+  font-size: 18px;
+  line-height: 1.67;
+}
+/* скриваєм крапки, підкреслення */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* Шапка */
+.logo {
+  color: var(--accent-color);
+  font-family: Comfortaa;
+  font-weight: 400;
+  text-decoration: none;
+}
+.logo:hover {
+  color: var(--accent-color);
+}
+/* site nav */
+.nav-list {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.nav-list:hover,
+.nav-list:focus {
+  color: var(--title-text-color);
+}
+.active {
+  color: var(--title-text-color);
+}
+.button-primary {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 11px 34px;
+  min-width: 130px;
+  border: 1px solid transparent;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  text-decoration: none;
+}
+.button-secondary {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 11px 42px;
+  min-width: 130px;
+  border: 1px solid var(--accent-color);
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+/* герой */
+.hero {
+  text-align: center;
+}
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.43;
+  text-align: center;
+  /* Для оформлення */
+  background-color: aqua;
+}
+.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.section-title {
+  margin-top: 0;
+  margin-bottom: 60px;
+
+  font-size: 48px;
+  line-height: 1.71;
+  letter-spacing: -0.015em;
+}
+.section-title.centred {
+  text-align: center;
+}
+.advantage-title,
+.example-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--title-text-color);
+}
+.advantage-paragraph {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.example-list > .item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  background-color: var(--primary-white-color);
+}
+.example-list .item:nth-child(2n) {
+  background-color: #18a0fb;
+}
