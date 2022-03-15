@@ -15,20 +15,20 @@
 <body>
     <!--Шапка-->
     <header>
-        <nav class="container">
+        <nav class="container main-nav">
             <a href="" class="logo">
                 <img src="./img/logo.svg"alt="logo" >
                 photo
             </a>
-            <ul class="list">
-                <li ><a class="nav-list active" href="./My-first-steps2.html">Features</a></li>
-                <li ><a class="nav-list"  href="">Support</a></li>
-                <li ><a class="nav-list"  href="">Community</a></li>
-                <li ><a class="nav-list" href="">Pricing</a></li>
+            <ul class="site-nav list">
+                <li class="item"><a class="nav-list active" href="./My-first-steps2.html">Features</a></li>
+                <li class="item"><a class="nav-list"  href="">Support</a></li>
+                <li class="item"><a class="nav-list"  href="">Community</a></li>
+                <li class="item"><a class="nav-list" href="">Pricing</a></li>
             </ul>
-            <ul class="list">
-                <li><a class="button-secondary" href="">Log in</a></li>
-                <li><a class="button-primary list" href="">Register</a></li>
+            <ul class="auth-nav list">
+                <li class="item"><a class="button-secondary" href="">Log in</a></li>
+                <li class="item"><a class="button-primary list" href="">Register</a></li>
             </ul>
         </nav>
     </header>
@@ -47,27 +47,27 @@
             <section class="advanteges">
                 <h2 class="section-title ">Snap photos and share like <br> never before</h2>
                 <ul class="advanteges-list list">
-                    <li>
+                    <li class="item">
                         <h3 class="advantage-title">Sed ut perspiciatis</h3>
                         <p class="advantage-paragraph">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             dolores eos qui
                             ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
                             <a class="button-secondary" href="">Learn more</a>
                     </li>
-                    <li>
+                    <li class="item">
                         <h3 class="advantage-title">Lorem ipsum dolor</h3>
                         <p class="advantage-paragraph">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                             enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
                         <a class="button-secondary" href="">Learn more</a>
                     </li>
-                    <li>
+                    <li class="item">
                         <h3 class="advantage-title">Nemo enim ipsam</h3>
                         <p class="advantage-paragraph">Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
                                     dolorem ipsum quia
                                     dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
                         <a class="button-secondary" href="">Learn more</a>
-                    </li>
-                    <li>
+                    </li >
+                    <li class="item">
                         <h3 class="advantage-title">Tempor incididunt</h3>
                         <p class="advantage-paragraph">Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
                                         amet, consectetur,
@@ -85,17 +85,21 @@
                 <ul class="example-list list">
                     <li class="item">
                         <img src="/img/Img.png" alt="Приклад роботи" width="750">
-                        <h3 class="example-title">Sed ut perspiciatis unde omnis</h3>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                            dolores eos qui
-                            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+                        <div class="content">
+                            <h3 class="example-title">Sed ut perspiciatis unde omnis</h3>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                                dolores eos qui
+                                ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+                        </div>
                     </li>
                     <li class="item">
                         <img src="/img/Img.png" alt="Приклад роботи" width="750">
-                        <h3 class="example-title">Sed ut perspiciatis unde omnis</h3>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                            dolores eos
-                            qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+                        <div class="content">
+                            <h3 class="example-title">Sed ut perspiciatis unde omnis</h3>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                                dolores eos qui
+                                ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+                        </div>
                     </li>
                 </ul>
                 </section>
@@ -103,9 +107,9 @@
         <div class="container">
         <!-- feature D -->
         <section class="feature">
-            <h2 class="section-title">You’re in good company</h2>
-            <p feature-parag>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-            <ul class="feature-list list">
+            <h2 class="section-title centred">You’re in good company</h2>
+            <p class="section-description centred">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+            <ul class="clients-list list">
                 <li><img src="/img/Rectangle.svg" alt="Company logo"></li>
                 <li><img src="/img/Rectangle.svg" alt="Company logo"></li>
                 <li><img src="/img/Rectangle.svg" alt="Company logo"></li>
@@ -118,18 +122,18 @@
         </section>
         </div>
         <!-- Sign up  -->
-        <section class="sign">
-            <p sign-parag>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-            <ul>
-                <div>
-                <a href="">Join Today</a>
-                <a href="">Contact us</a>
+        <section>
+            <div class="container reg">
+                <p class="section-description reg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                <div class="reg ">
+                <a class="button-primary btn-reg list" href="">Join Today</a>
+                <a class="button-secondary btn-reg list" href="">Contact us</a>
                 </div>
-            </ul>
-        </section>     
+            </div>
+        </section>
 </main>
     <!-- Footer -->
-    <footer >
+    <footer class="container">
         <section class="footer">
             <ul class="footer-list list">
                 <li><a href="">Mobile app</a></li>
@@ -147,7 +151,7 @@
                 <li><a href="">Resources</a></li>
             </ul>
             <ul class="social ">
-                <li><a href="" aria-label="Силка на Фейсбук">Facebook</a></li>
+                <li><a class="" href="" aria-label="Силка на Фейсбук">Facebook</a></li>
                 <li><a href="" aria-label="Силка на Лінкед ін">LinkedIN</a></li>
                 <li><a href="" aria-label="Силка на Інстаграм">Instagram</a></li>
                 <li><a href="" aria-label="Силка на Твітер">Twitter</a></li>

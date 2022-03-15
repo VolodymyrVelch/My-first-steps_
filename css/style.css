@@ -21,6 +21,8 @@ html {
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 1440px;
 
   outline: 2px solid tomato;
@@ -40,6 +42,10 @@ body {
   list-style: none;
 }
 /* Шапка */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 .logo {
   color: var(--accent-color);
   font-family: Comfortaa;
@@ -50,7 +56,29 @@ body {
   color: var(--accent-color);
 }
 /* site nav */
+.site-nav {
+  display: flex;
+  margin-left: 70px;
+}
+.site-nav .item + .item {
+  margin-right: 40px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 40px;
+}
+/* авторизація */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 12px;
+}
+
 .nav-list {
+  display: block;
+  padding: 21px;
+
   color: var(--accent-color);
   font-weight: 500;
   font-size: 15px;
@@ -104,8 +132,6 @@ body {
   font-size: 56px;
   line-height: 1.43;
   text-align: center;
-  /* Для оформлення */
-  background-color: aqua;
 }
 .no-padding {
   padding-top: 0;
@@ -119,8 +145,19 @@ body {
   line-height: 1.71;
   letter-spacing: -0.015em;
 }
-.section-title.centred {
+.section-title.centred,
+.section-description.centred {
   text-align: center;
+}
+.advanteges-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -40px -75px;
+}
+.advanteges-list .item {
+  width: 625px;
+  margin-right: 148px;
+  margin: 40px 75px;
 }
 .advantage-title,
 .example-title {
@@ -137,11 +174,55 @@ body {
   margin-bottom: 32px;
 }
 .example-list > .item {
+  display: flex;
+  align-items: center;
   padding-top: 80px;
   padding-bottom: 80px;
 
   background-color: var(--primary-white-color);
 }
 .example-list .item:nth-child(2n) {
-  background-color: #18a0fb;
+  flex-direction: row-reverse;
+  background-color: var(--seconady-bg-color);
+}
+.example-list > .item:nth-child(2n + 1) > .content {
+  margin-left: 84px;
+}
+.example-list > .item:nth-child(2n) > .content {
+  margin-right: 84px;
+}
+.section-description {
+  font-size: 36px;
+  line-height: 1.39;
+  letter-spacing: -0.015em;
+}
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1020px;
+  margin: -30px -40px;
+  margin: auto;
+}
+.clients-list li {
+  margin: 30px 40px;
+}
+/* реєстрація */
+.reg {
+  display: flex;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  background-color: var(--seconady-bg-color);
+}
+.section-description .reg {
+  margin-right: 84px;
+}
+
+.btn-reg {
+  width: 192px;
+  text-align: center;
+}
+.btn-reg:nth-child(2n) {
+  margin-left: 45px;
 }
